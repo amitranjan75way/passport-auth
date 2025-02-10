@@ -1,0 +1,218 @@
+/* Signup Page-specific Styles */
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color); /* Uses global background color */
+  padding: 20px;
+}
+
+.formWrapper {
+  max-width: 450px;
+  width: 100%;
+  padding: 30px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color); /* Global text color */
+}
+
+.brandName {
+  color: var(--primary-color); /* Global primary color */
+}
+
+.subHeader {
+  font-size: 16px;
+  text-align: center;
+  color: var(--secondary-text-color); /* Global secondary text color */
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup,
+.role {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup input,
+.role input,
+.dropdown {
+  padding: 10px 20px;
+  border: 1px solid var(--input-border); /* Global input border */
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  background-color: var(--background-color);
+}
+
+.inputGroup label {
+  font-weight: bold;
+  color: var(--text-color); /* Global text color */
+  margin-bottom: 5px;
+}
+
+.inputGroup input:focus,
+.passwordWrapper input:focus,
+.dropdown:focus {
+  border-color: var(--primary-color); /* Global primary color */
+  outline: none;
+}
+
+.passwordWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.passwordWrapper input {
+  flex: 1;
+}
+
+.eyeButton {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: var(--text-color); /* Global text color */
+}
+
+.dropdown {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown:hover {
+  border-color: var(--primary-color); /* Global primary color */
+}
+
+.error {
+  font-size: 0.875rem;
+  color: red;
+  margin-top: 0.25rem;
+}
+
+.registerButton {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white); /* Global white color */
+  background-color: var(--primary-color); /* Global primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: var(--secondary-color); /* Global secondary color */
+  transform: scale(1.02);
+}
+
+.loginButton {
+  color: var(--primary-color); /* Global primary color */
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  text-decoration: underline;
+}
+ 
+
+
+/* Register form skeleton */
+/* General Styles */
+.registerFormSkeletonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.registerFormSkeletonFormWrapper {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--card-shadow);
+  border: 1px solid var(--border-color);
+}
+
+.registerFormSkeletonHeader {
+  width: 80%;
+  height: 2rem;
+  background-color: var(--skeleton-bg-light);
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.registerFormSkeletonSubHeader {
+  width: 60%;
+  height: 1rem;
+  background-color: var(--skeleton-bg-light);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.registerFormSkeletonForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Skeleton Input Group */
+.registerFormSkeletonSkeletonInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.registerFormSkeletonSkeletonInput {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--skeleton-bg-light);
+  border-radius: 5px;
+}
+
+.registerFormSkeletonSkeletonButton {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--skeleton-bg-light);
+  border-radius: 5px;
+}
+
+.registerFormSkeletonSkeletonLoginLink {
+  width: 60%;
+  height: 1rem;
+  background-color: var(--skeleton-bg-light);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Dark Mode Adaptation */
+[data-theme="dark"] .registerFormSkeletonHeader,
+[data-theme="dark"] .registerFormSkeletonSubHeader,
+[data-theme="dark"] .registerFormSkeletonSkeletonInput,
+[data-theme="dark"] .registerFormSkeletonSkeletonButton,
+[data-theme="dark"] .registerFormSkeletonSkeletonLoginLink {
+  background-color: var(--skeleton-bg-dark);
+}

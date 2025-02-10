@@ -1,0 +1,170 @@
+.updatePasswordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.passwordWrapper input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.eyeInsideInput {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.updateButton {
+  background: var(--primary-color);
+  color: var(--background-color);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.updateButton:hover {
+  background: var(--link-hover);
+  transform: translateY(-2px);
+}
+
+.updateButton:disabled {
+  background: var(--border-color);
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+
+/* update password skeleton  */
+
+/* Skeleton Styles for UpdatePassword */
+
+/* Container and Form Wrapper */
+.updatePasswordSkeletonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.updatePasswordSkeletonFormWrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--card-shadow);
+  border: 1px solid var(--border-color);
+}
+
+/* Header Skeleton */
+.updatePasswordSkeletonHeader {
+  width: 80%;
+  height: 2rem;
+  background-color: var(--skeleton-bg-light);
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Input Groups */
+.updatePasswordSkeletonInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Skeleton for each input */
+.updatePasswordSkeletonSkeletonInput {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--skeleton-bg-light);
+  border-radius: 5px;
+}
+
+/* Skeleton Button */
+.updatePasswordSkeletonSkeletonButton {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--skeleton-bg-light);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Dark Mode Adaptation */
+[data-theme="dark"] .updatePasswordSkeletonHeader,
+[data-theme="dark"] .updatePasswordSkeletonSkeletonInput,
+[data-theme="dark"] .updatePasswordSkeletonSkeletonButton {
+  background-color: var(--skeleton-bg-dark);
+}
+

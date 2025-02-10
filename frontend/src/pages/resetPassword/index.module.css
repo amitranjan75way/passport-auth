@@ -1,0 +1,177 @@
+.resetPasswordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subHeader {
+  color: var(--secondary-text);
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+.submitButton {
+  background: var(--primary-color);
+  color: var(--background-color);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.submitButton:hover {
+  background: var(--link-hover);
+  transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  background: var(--border-color);
+  cursor: not-allowed;
+}
+
+.errorInput {
+  border-color: red;
+}
+
+.errorInput:focus {
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* reset password skeleton css */
+/* Reset Password skeleton */
+/* General Styles */
+.resetPasswordSkeletonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.resetPasswordSkeletonFormWrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+.resetPasswordSkeletonHeader {
+  width: 80%;
+  height: 2rem;
+  background-color: var(--skeleton-bg-light);
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.resetPasswordSkeletonSubHeader {
+  width: 60%;
+  height: 1rem;
+  background-color: var(--skeleton-bg-light);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.resetPasswordSkeletonForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Skeleton Input Group */
+.resetPasswordSkeletonSkeletonInputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resetPasswordSkeletonSkeletonInput {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--skeleton-bg-light);
+  border-radius: 5px;
+}
+
+.resetPasswordSkeletonSkeletonButton {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--skeleton-bg-light);
+  border-radius: 5px;
+}
+
+/* Dark Mode Adaptation */
+[data-theme="dark"] .resetPasswordSkeletonHeader,
+[data-theme="dark"] .resetPasswordSkeletonSubHeader,
+[data-theme="dark"] .resetPasswordSkeletonSkeletonInput,
+[data-theme="dark"] .resetPasswordSkeletonSkeletonButton {
+  background-color: var(--skeleton-bg-dark);
+}
