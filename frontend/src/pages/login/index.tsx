@@ -52,10 +52,12 @@ const LoginForm: React.FC = () => {
   const onSubmit: SubmitHandler<LoginFormData> = async (data) => {
     try {
       const result = await loginUser(data).unwrap();
+      console.log("Login response: ", result);
       toast.success('Login successful!');
-      dispatch(login(result.data));
+      // dispatch(login(result.data));
       navigate('/');
     } catch (err) {
+      console.log("Login Error: ", err);
       const errorCode = (err as any)?.data?.error_code;
       if (errorCode === 404) {
         toast.error('User not found.');
